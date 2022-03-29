@@ -31,9 +31,9 @@ function IndexController() {
     var bindSubmitForm = function() {
         customerForm.addEventListener("submit", function(eventSubmit) {
             eventSubmit.preventDefault();
-            let form = _this.reference.querySelector('form');
-            let formData = new FormData(form);
-            console.log(formData);
+            console.log($(customerForm).serializeArray());
+            alert("Formulário enviado com sucesso");
+            customerForm.reset();
         });
     };
 
