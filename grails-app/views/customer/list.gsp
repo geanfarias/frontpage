@@ -6,7 +6,6 @@
     <table>
         <thead>
             <tr>
-                <th>1</th>
                 <th>2</th>
                 <th>3</th>
                 <th>Nome</th>
@@ -18,7 +17,6 @@
         <tbody>
             <g:each var="customer" in="${ customerList }">
                 <tr>
-                    <td>1</td>
                     <td>2</td>
                     <td>3</td>
                     <td> <a href="${ g.createLink(controller: 'customer', action: 'show', id: customer.id) }"> ${ customer.name } </a></td>
